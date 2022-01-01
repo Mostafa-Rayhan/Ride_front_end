@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" 
+    integrity="sha512-FOS5ANNUsuvefA5Fm6hZBLsxqfF105LIysEgV8VNz29jZLVYIhI+MOLKPBmMXgkHhARFHf5pE7KbXOLE6TXW0A==" 
+    crossorigin="anonymous" />
+
+    <style>
+        body{
+            background-color: lightseagreen;
+
+        }
+        form{
+            margin: 70px;
+            background-color: thistle;
+        }
+        .h{
+            background-color: #F7941E;
+            padding: 40px;
+            font: 1em sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: green;
+        }
+        .form-row{
+            margin: 50px;
+        }
+        .btn{
+          align-content: center;
+          margin-left: 35%;
+        }
+        .radios{
+          margin: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <div class="h">
+            <h1 align="center">User Profile Form</h1>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        <br>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Phone Number</label>
+                <input type="text" class="form-control" id="inputPhone" placeholder="+880">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">Licence</label>
+                <input type="text" class="form-control" placeholder="123...">
+              </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label for="inputAddress">NID No</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="123...">
+          </div>
+          
+          
+          <div style="margin-right: 12px;">
+            <label for="exampleFormControlFile1">Licence Photo</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          
+      </div>
+
+
+        <!-- <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inlineFormCustomSelectPref">Religion</label>
+                <select class="form-control" id="inlineFormCustomSelectPref">
+                    <option selected>Choose...</option>
+                    <option value="1">Islam</option>
+                    <option value="2">Hindu</option>
+                    <option value="3">Bhuddo</option>
+                    <option value="3">Chistran</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>           
+         </div>
+         <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inlineFormCustomSelectPref">Department</label>
+                <select class="form-control" id="inlineFormCustomSelectPref">
+                    <option selected>Choose...</option>
+                    <option value="1">CSE</option>
+                    <option value="2">EEE</option>
+                    <option value="3">TE</option>
+                    <option value="3">ME</option>
+                    <option value="3">CE</option>
+                </select>
+            </div>           
+         </div>
+
+         <div class="form-row">
+             <div class="form-group col-md-4">
+                    <label for="inputFirstName">Day of Birth</label>
+                  <input type="date" class="form-control">
+            </div>
+         </div>
+
+         <br>
+         -->
+
+        <!-- <div class="form-row">
+            <div class="col-sm-2" style="font-size: x-large;">IT Experience </div>
+            <div class="col-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">Hardware Expert</label>
+              </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">Software Expert</label>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">Graphics Expert</label>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">Network Expert</label>
+                </div>
+              </div>  
+        </div> -->
+
+
+        <div class="radios">
+          <div class="form-row">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+        
+        <div class="btn">
+          <button type="button" class="btn btn-primary btn-lg" >Submit</button>
+          <button type="button" class="btn btn-success btn-lg" style="margin: 40px;">Reset</button>  
+        </div>
+              
+    </form>
+</body>
+</html>

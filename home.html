@@ -125,6 +125,45 @@
                 </div>
               </div> 
 
+              <!-----Nav Item History----->
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#history">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+            <div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">My History</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Your Ride is Mohakhali to Gabtali Distance 9.21 km TK 92 12/15/21 07:03 pm</p>
+                            <p>Your Ride is Uttara to Firmgate Distance 17.54 km TK 175 12/16/21 03:52 pm</p>
+                            <p>Your Ride is Mirpur 2 to Motijil Distance 15.62 km TK 156 12/16/21 05:09 pm</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-----Nav Item Ratting----->
+
+            <li class="nav-item">
+                <a class="nav-link" href="ratting.html">
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>Ratting</span>
+                </a>
+            </li>
+
+
             <!-----Nav Item Travel Payment----->
              
             <li class="nav-item"> 
@@ -139,7 +178,9 @@
                         <h6 class="collapse-header">Transactions:</h6> 
                         <a class="collapse-item" href="https://www.bkash.com/">Bkash</a> 
                         <a class="collapse-item" href="https://www.dutchbanglabank.com/">Rocket</a> 
-                        <a class="collapse-item" href="https://nagad.com.bd/en/">Nogod</a> 
+                        <a class="collapse-item" href="https://nagad.com.bd/en/">Nogod</a>
+                        <a class="collapse-item" href="https://www.paypal.com/us/signin">Paypal</a>
+                        <a class="collapse-item" href="wallet.html">My Wallet</a> 
                     </div> 
                 </div> 
             </li>
@@ -195,6 +236,27 @@
                     </div>
                     <div class="modal-body">
                         <div class="help">
+                             <div>
+                                <ul style="list-style-type:disc">
+                                    <li>Rider drove dangerously/misbehaved. How can I report it?</li>
+                                    <li>My app is not working. What should I do?</li>
+                                    <li>How Can I Report an Issue/Complain?</li>
+                                    <li>I was overcharged, please refund!</li>
+                                    <li>Account and Payment issue?</li>
+                                    <li>Sign in or Log in issue?</li>
+                                    <li>Accessibility issue?</li>
+                                </ul>
+                            </div>
+                            <br>
+
+                            <form method="POST" action="">
+                                <div class="form-group">
+                                    <label for="comment" >Comment</label>
+                                       <textarea class="form-control" value="" id="comment" name="comment" rows="3"></textarea>                                  
+                                </div>
+                                <input type="submit" class="btn btn-primary btn-lg btn-block" value="submit">
+                            </form>
+                            <br>
                             <div class="helpContent">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                 <a href="">Message</a>
@@ -300,15 +362,16 @@
                         <!------ Dropdown Alerts ------>
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                             <h6 class="dropdown-header">Alerts Center</h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+
+                            <a class="dropdown-item d-flex align-items-center" href="#" data-toggle="modal" data-target="#notify">
                                 <div class="mr-3">
                                     <div class="icon-circle bg-primary">
                                         <i class="fa fa-file-alt text-white"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="small text-gray-500">June 15, 2021</div>
-                                    <span class="font-weight-bold">A new monthly report is ready to download</span>
+                                    <div class="small text-gray-500">December 04, 2021</div>
+                                    <span class="font-weight-bold">A new ride is found</span>
                                 </div>
                             </a>
 
@@ -338,6 +401,30 @@
                             <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                         </div>
                     </li>
+
+                    <!--------- Notifications popup page ---------->
+
+                    <div class="modal fade" id="notify" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="notify">Location Search</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <h3>From: Shukrabad</h3>
+                                <h3>To: Mohakhali Bus Stop</h3>
+                                <h3>BDT. 75.23</h3>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                              <button type="button" class="btn btn-primary">Accept</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                     <!------ Nav Item - Message ------>
                     <li class="nav-item dropdown no-arrow mx-1">
@@ -411,9 +498,13 @@
                         </a>
                     
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="profile.html">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Profile
+                                Profile Update
+                            </a>
+                            <a class="dropdown-item" href="profileView.html">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Profile View
                             </a>
                             <a class="dropdown-item" href="settings.html">
                                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -454,8 +545,43 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLarge">
                         <i class="fa fa-car" aria-hidden="true"></i>
                         Car
+                    </button>
+                    <button type="button" style="margin-left: 7px" class="btn btn-primary" data-toggle="modal" data-target="#notifying">
+                        <i class="fas fa-dollar-sign"></i>
+                        Price
                     </button>                                 
                 </div>
+
+                <!------ Price Popup Page ------>
+
+
+                <div class="modal fade" id="notifying" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="notifying">Price</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                          
+                        <div class="modal-body">
+                              <button type="button" class="btn btn-outline-secondary btn-lg btn-block">
+                                  <i class="fa fa-car" aria-hidden="true">&nbsp&nbsp&nbsp&nbsp220</i>&nbsp&nbsp&nbsp&nbsp<i class="fas fa-user">&nbsp&nbsp&nbsp&nbsp2</i>
+                              </button>
+                            <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+                                <i class="fa fa-motorcycle" aria-hidden="true">&nbsp &nbsp &nbsp&nbsp60</i>&nbsp &nbsp&nbsp&nbsp<i class="fas fa-user">&nbsp&nbsp&nbsp&nbsp1</i>
+                            </button>
+                        </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+                            <button type="button" class="btn btn-primary">Accept</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
                 
                 
                 <!--Bike - Modal -->
